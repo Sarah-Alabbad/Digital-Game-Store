@@ -29,9 +29,7 @@ The project uses a MySQL database to store users, games, reviews, and other info
 
 This project helped me improve my web development skills and understand how the front-end, back-end, and database work together.
 
-## Team Members
 
-- Sarah Alabbad
 # Digital Game Store
 
 Digital Game Store is a web development project for browsing and buying digital games. Users can create an account, browse games, add games to the cart, purchase games, and write reviews.
@@ -63,9 +61,7 @@ The project uses a MySQL database to store users, games, reviews, and other info
 
 This project helped me improve my web development skills and understand how the front-end, back-end, and database work together.
 
-## Team Members
 
-- Sarah Alabbad
 # Digital Game Store
 
 Digital Game Store is a web development project for browsing and buying digital games. Users can create an account, browse games, add games to the cart, purchase games, and write reviews.
