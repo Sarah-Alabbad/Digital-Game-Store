@@ -99,9 +99,10 @@ This project helped me improve my web development skills and understand how the 
 
 ## Team Members
 
+- Shahad Aldawsari
+- Roaa Alhaddad
+- Fatima Alsayed
 - Sarah Alabbad
--Roaa Alhaddad
--Shahad Aldawsari
--Zahra Al-Mari
--Lama Alshaikh
--Batool Al Fardan
+- Lama Alshaikh
+- Batool Al Fardan
+- Zahra Al-Mari
