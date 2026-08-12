@@ -53,6 +53,16 @@ My contributions to this project included:
 - Integrating API functionality for game information
 - Contributing to the database functionality
 
+## Team Members
+
+- Shahad Nasser Aldawsari
+- Roaa Abbas Alhaddad
+- Fatima Alsayed
+- Sarah Alabbad
+- Lama Al-Alshaikh
+- Batool Al Fardan
+- Zahra Al-Mari
+
 ## Project Purpose
 
 This project was developed as a university web development project to practice full-stack web development concepts, database integration, user authentication, and interactive web functionality.
