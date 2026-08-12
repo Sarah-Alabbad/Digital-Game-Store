@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support | Digital Game Store</title>
+<link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+
+<nav>
+<nav>
+    <a href="home.php">Home</a>
+
+    <?php if (isset($_SESSION["role"]) && $_SESSION["role"] == "admin") { ?>
+        <a href="admin.php">Admin</a>
+    <?php } ?>
+
+    <a href="cart.php">Cart</a>
+    <a href="support.php">Support</a>
+    <a href="FAQ.html">FAQ</a>
+    <a href="Terms & Conditions.html">Terms</a>
+    <a href="about_us.php">About Us</a>
+    <a href="Join_Team.php">Join Team</a>
+    <a href="logout.php" class="logout-link">Logout</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Support</h1>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email">
+
+<label>Issue Type</label>
+<select>
+<option>Payment Problem</option>
+<option>Game Not Working</option>
+<option>Refund Request</option>
+<option>Account Issue</option>
+<option>Other</option>
+</select>
+
+<label>Message</label>
+<textarea rows="5" placeholder="Describe your issue"></textarea>
+
+<button type="submit" 
+style="display:block; margin:20px auto 0;">
+Submit
+</button>
+
+</form>
+
+</div>
+
+<div class="card contact-links">
+<h2>Contact Us</h2>
+<p>📞 Phone: <a href="tel:0551234567">055-123-4567</a></p>
+<p>📧 Email: <a href="mailto:support@gamestore.com">support@gamestore.com</a></p>
+</div>
+
+</div>
+
+<footer style="position:fixed; bottom:0; width:100%; text-align:center; padding:15px; background-color:#24222f; border-top:2px solid #4a475e; color:#d1d1e0; font-size:14px;">
+    © 2026 Digital Game Store | All Rights Reserved
+</footer>
+
+
+</body>
+</html>

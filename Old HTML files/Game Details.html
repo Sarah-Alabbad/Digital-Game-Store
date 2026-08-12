@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Details | Digital Game Store</title>
+<link rel="stylesheet" href="Style/style.css">
+
+<style>
+.game {
+    display: none;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.game:target {
+    display: flex;
+}
+
+#car:target ~ .message,
+#smart:target ~ .message,
+#football:target ~ .message {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .game:target {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game img {
+        width: 100% !important;
+        max-width: 300px;
+        height: auto !important;
+    }
+
+    ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="store.html">Home</a>
+    <a href="User Profile.html">Profile</a>
+    <a href="Shopping Cart.html">Cart</a>
+    <a href="support.html">Support</a>
+    <a href="faq.html">FAQ</a>
+    <a href="Terms & Conditions.html">Terms</a>
+    <a href="About Us.html">About Us</a>
+    <a href="Sign Up.html">Logout</a>
+</nav>
+
+<div class="container">
+
+    <h1 style="text-align:center;">Game Details</h1>
+
+    <div class="card">
+
+        <div class="game" id="car">
+            <img src="Images/car.jpg" alt="Need for Speed Payback"
+                 style="width:250px; height:300px; object-fit:cover; border:2px solid #4a475e; box-shadow:0 4px 10px rgba(0,0,0,0.4);">
+            <div class="game-info">
+                <h2 style="color:#3e8e5b;">Need for Speed Payback</h2>
+                <p><strong>Price:</strong> 59.99 sr</p>
+                <p><strong>Genre:</strong> Racing</p>
+                <p><strong>Description:</strong> Need for Speed Payback is a racing game featuring high speed cars, street racing and exciting challenges.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Street racing challenges</li>
+                    <li>Wide selection of cars</li>
+                    <li>High speed racing gameplay</li>
+                </ul>
+                <div class="button-group" style="display:flex; gap:15px; margin-top:20px; flex-wrap:wrap;">
+                    <a href="store.html" class="btn">Back to Store</a>
+                    <a href="Game Reviews.html" class="btn" style="background-color:#2187f5; border-color:#2187f5;">Leave a Review</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="game" id="smart">
+            <img src="Images/smart.jpg" alt="Age of Empires"
+                 style="width:250px; height:300px; object-fit:cover; border:2px solid #4a475e; box-shadow:0 4px 10px rgba(0,0,0,0.4);">
+            <div class="game-info">
+                <h2 style="color:#3e8e5b;">Age of Empires</h2>
+                <p><strong>Price:</strong> 50 sr</p>
+                <p><strong>Genre:</strong> Strategy</p>
+                <p><strong>Description:</strong> Age of Empires is a strategy game focused on building civilizations, managing resources and leading battles.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Build and expand your empire</li>
+                    <li>Resource management</li>
+                    <li>Strategic battles</li>
+                </ul>
+                <div class="button-group" style="display:flex; gap:15px; margin-top:20px; flex-wrap:wrap;">
+                    <a href="store.html" class="btn">Back to Store</a>
+                    <a href="Game Reviews.html" class="btn" style="background-color:#2187f5; border-color:#2187f5;">Leave a Review</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="game" id="football">
+            <img src="Images/football.jpg" alt="FC 26"
+                 style="width:250px; height:300px; object-fit:cover; border:2px solid #4a475e; box-shadow:0 4px 10px rgba(0,0,0,0.4);">
+            <div class="game-info">
+                <h2 style="color:#3e8e5b;">FC 26</h2>
+                <p><strong>Price:</strong> 29.99 sr</p>
+                <p><strong>Genre:</strong> Sports</p>
+                <p><strong>Description:</strong> FC 26 is a football game with competitive matches, teams and realistic sports gameplay.</p>
+                <h3>Features</h3>
+                <ul>
+                    <li>Football matches and tournaments</li>
+                    <li>Team selection</li>
+                    <li>Sports gameplay experience</li>
+                </ul>
+                <div class="button-group" style="display:flex; gap:15px; margin-top:20px; flex-wrap:wrap;">
+                    <a href="store.html" class="btn">Back to Store</a>
+                    <a href="Game Reviews.html" class="btn" style="background-color:#2187f5; border-color:#2187f5;">Leave a Review</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" style="text-align:center; padding:40px;">
+            <p style="font-size:20px;">Select a game from the store to view its details.</p>
+            <a href="store.html" class="btn">Back to Store</a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer style="position:fixed; bottom:0; width:100%; text-align:center; padding:15px; background-color:#24222f; border-top:2px solid #4a475e; color:#d1d1e0; font-size:14px;">
+    © 2026 Digital Game Store | All Rights Reserved
+</footer>
+
+
+</body>
+</html>

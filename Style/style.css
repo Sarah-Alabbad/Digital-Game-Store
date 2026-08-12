@@ -1,0 +1,560 @@
+/* ==================================================
+   GameVerse Shared Theme CSS
+   Built from the styling used across the whole project
+   Image sizes intentionally left out
+   ================================================== */
+
+@font-face {
+    font-family: "ByteBounce";
+    src: url("Font/ByteBounce.ttf") format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #d1d1e0;
+    background-color: #2e2c39;
+    background-image:
+        linear-gradient(to right,
+            transparent 0px, transparent 120px,
+            #4f9a94 120px, #4f9a94 160px,
+            transparent 160px, transparent 320px,
+            #3a384a 320px, #3a384a 360px,
+            transparent 360px, transparent 400px
+        ),
+        linear-gradient(to right,
+            transparent 0px, transparent 40px,
+            #5a5775 40px, #5a5775 120px,
+            #4f9a94 120px, #4f9a94 200px,
+            transparent 200px, transparent 280px,
+            #3a384a 280px, #3a384a 360px,
+            transparent 360px, transparent 400px
+        ),
+        linear-gradient(to right,
+            #7d6b91 0px, #7d6b91 40px,
+            #5a5775 40px, #5a5775 120px,
+            #3e8e5b 120px, #3e8e5b 200px,
+            transparent 200px, transparent 240px,
+            #4f9a94 240px, #4f9a94 280px,
+            #3a384a 280px, #3a384a 400px
+        ),
+        linear-gradient(to right,
+            #7d6b91 0px, #7d6b91 80px,
+            #5a5775 80px, #5a5775 120px,
+            #3e8e5b 120px, #3e8e5b 240px,
+            #4f9a94 240px, #4f9a94 320px,
+            #3a384a 320px, #3a384a 400px
+        ),
+        linear-gradient(to bottom, #2e2c39, #48455e);
+    background-size:
+        400px 40px,
+        400px 40px,
+        400px 40px,
+        400px 40px,
+        100% 100%;
+    background-position:
+        bottom 120px left 0,
+        bottom 80px left 0,
+        bottom 40px left 0,
+        bottom 0 left 0,
+        0 0;
+    background-repeat:
+        repeat-x,
+        repeat-x,
+        repeat-x,
+        repeat-x,
+        no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+body.page-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+body.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #24222f;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav a {
+    color: #d1d1e0;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+a:hover,
+.filter-list a:hover,
+.signup-link a:hover,
+.login-link a:hover,
+.contact-links a:hover {
+    color: #3e8e5b;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 60px;
+}
+
+.card,
+.review-box,
+.message,
+.game:target {
+    background-color: #2f2d3e;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 2px solid #4a475e;
+    border-radius: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2,
+h3,
+.review-title,
+summary {
+    font-family: "ByteBounce", Arial, sans-serif;
+    font-weight: normal;
+    color: #d1d1e0;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 0.95;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+h3,
+.review-title,
+summary {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.8;
+    list-style-type: square;
+}
+
+strong,
+.game-info strong,
+.stats strong,
+.price {
+    color: #ffffff;
+}
+
+a {
+    color: #d1d1e0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn,
+button,
+.submit-btn,
+.add,
+.edit,
+.delete,
+.remove,
+.btn-review,
+.btn-full {
+    padding: 12px 22px;
+    border-radius: 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+.btn,
+button,
+.submit-btn,
+.add,
+.edit,
+.btn-full {
+    background-color: #3e8e5b;
+    border-color: #3e8e5b;
+}
+
+.btn:hover,
+button:hover,
+.submit-btn:hover,
+.add:hover,
+.edit:hover,
+.btn-full:hover {
+    background-color: #2f6f46;
+    border-color: #2f6f46;
+    transform: scale(1.03);
+}
+
+.delete,
+.remove {
+    background-color: #c94c4c;
+    border-color: #c94c4c;
+}
+
+.delete:hover,
+.remove:hover {
+    background-color: #a33b3b;
+    border-color: #a33b3b;
+    transform: scale(1.03);
+}
+
+.btn-review {
+    background-color: #2187f5;
+    border-color: #2187f5;
+}
+
+.btn-review:hover {
+    background-color: #4da5f6;
+    border-color: #4da5f6;
+    transform: scale(1.03);
+}
+
+.btn-full,
+.submit-btn {
+    display: block;
+    text-align: center;
+}
+
+label,
+.input-label,
+.radio-label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+input,
+select,
+textarea,
+.input-field,
+.rating-field,
+.comment-field,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 0;
+    border: 2px solid #4a475e;
+    background-color: #24222f;
+    color: #d1d1e0;
+    transition: 0.3s;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.input-field:focus,
+.rating-field:focus,
+.comment-field:focus {
+    outline: none;
+    border-color: #3e8e5b;
+    background-color: #2a2836;
+}
+
+textarea,
+.comment-field {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.rating-field option {
+    background-color: #24222f;
+    color: #d1d1e0;
+}
+
+form,
+.input-group {
+    display: block;
+}
+
+.radio-group {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.signup-link,
+.login-link,
+.rating-note {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.signup-link a,
+.login-link a,
+.contact-links a {
+    color: #4f9a94;
+    font-weight: bold;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.stats {
+    margin: 15px 0;
+}
+
+.stats span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.library-grid,
+.games,
+.categories {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-box,
+.category-box,
+.game-card,
+.cart-item {
+    background-color: #24222f;
+    border: 2px solid #4a475e;
+    border-radius: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-box,
+.category-box {
+    padding: 10px;
+    text-align: center;
+}
+
+.game-card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.game-card:hover,
+.category-box:hover,
+.game-box:hover {
+    border-color: #3e8e5b;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.game-info {
+    flex: 1;
+}
+
+.game-info p,
+.game-box p,
+.summary p,
+.message p,
+.contact-info p,
+.contact-links p {
+    margin: 5px 0;
+}
+
+.category-btn-wrapper {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #4a475e;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cart-item {
+    padding: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item:first-child,
+.cart-item:last-child {
+    margin-bottom: 18px;
+}
+
+.cart-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.summary {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #24222f;
+    border: 2px solid #4a475e;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 2px solid #4a475e;
+    text-align: center;
+}
+
+th {
+    background-color: #1e1c26;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+details[open] {
+    border-color: #3e8e5b;
+}
+
+details p {
+    margin-top: 10px;
+}
+
+/* ----------------------------------------------
+   Image styling without size rules
+   ---------------------------------------------- */
+img,
+.game-img,
+.profile-pic,
+.cart-left img,
+.game img,
+.category-box img {
+    display: block;
+    border-radius: 0;
+    border: 2px solid #4a475e;
+    background-color: #4a475e;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.game-img:hover,
+.category-box:hover img,
+.game-card:hover .game-img {
+    transform: scale(1.05);
+    border-color: #3e8e5b;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    background-color: #24222f;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #4a475e;
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
+}
+
+.auth-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+/* ----------------------------------------------
+   Responsive
+   ---------------------------------------------- */
+@media (max-width: 900px) {
+    .game-card,
+    .profile-header,
+    .cart-item,
+    .cart-left,
+    .game:target {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h3,
+    .review-title,
+    summary {
+        font-size: 24px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    ul {
+        text-align: left;
+    }
+    
+}
